@@ -31,6 +31,11 @@
 
 		for (i = 0; i < objs.length; i++) {
 			o = objs[i];
+
+			if(o == null) { // null or undefined
+				continue;
+			}
+
 			for (key in o) {
 				if (!o.hasOwnProperty(key)) {
 					continue;
@@ -45,6 +50,9 @@
 
 	function mixIntoObjectES5(target, objs) {
 		objs.forEach(function(o) {
+			if(o == null) { // null or undefined
+				return;
+			}
 			Object.keys(o).forEach(function(k) {
 				var descriptor = Object.getOwnPropertyDescriptor(o, k);
 				Object.defineProperty(target, k, descriptor);

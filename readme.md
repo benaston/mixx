@@ -2,17 +2,23 @@
 
 Adds object methods to the prototype of a function, or as own-properties on an object.
 
-File size: 727 bytes.<br/>
-Supported platforms: server and browser.<br/>
-Supported language versions: ES3 and above.
+File size: **746 bytes**.<br/>
+Supported platforms: **server and browser**.<br/>
+Supported language versions: **ES3 and above**.
 
 Also supports mixing of getter and setter properties when run within ES5 compliant systems.
 
+Ignores null and undefined property sources.
+
+If you use this library in your software please tweet me @benastontweet.
+
+## Installation
+
+```npm install mixx```
+
 ## Example
 
-```
-var mix = window.mixx.mix;
-// -- OR --
+```javascript
 var mix = require('mixx').mix;
 
 function Foo() {}
