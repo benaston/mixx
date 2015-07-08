@@ -1,6 +1,6 @@
 {
 	"name": "mixx",
-	"version": "0.0.17",
+	"version": "0.1.0",
 	"description": "Enables mixing of prototypes.",
 	"keywords": ["mixin", "mix", "mix-in"],
 	"homepage": "https://github.com/benaston/mixx",

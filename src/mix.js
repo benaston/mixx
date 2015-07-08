@@ -55,6 +55,7 @@
 			}
 			Object.keys(o).forEach(function(k) {
 				var descriptor = Object.getOwnPropertyDescriptor(o, k);
+				descriptor.configurable = true;
 				Object.defineProperty(target, k, descriptor);
 			});
 		});
